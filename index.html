@@ -3,86 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>sripad G.R.</title>
+  <title>G.R. Sripad - Portfolio</title>
   <style>
+    * {
+    box-sizing: border-box;  
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       margin: 0;
       padding: 0;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
       background-color: #282c34;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
-    header h2 {
-      margin-top: 0.5rem;
-      font-weight: normal;
-      color: #61dafb;
-    }
+
     main {
-      max-width: 800px;
+      max-width: 960px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 0 1.2rem;
     }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      margin-bottom: 2rem;
+    }
+
     h3 {
-      border-bottom: 2px solid #61dafb;
-      padding-bottom: 0.5rem;
+      border-left: 4px solid #61dafb;
+      padding-left: 0.6rem;
+      color: #222;
       margin-bottom: 1rem;
-      color: #333;
     }
+
     ol {
-      padding-left: 1.5rem;
+      padding-left: 1.4rem;
     }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
     a {
       text-decoration: none;
       color: #0077cc;
-      transition: color 0.3s ease;
+      transition: all 0.2s ease-in-out;
     }
+
     a:hover {
       color: #005299;
+      text-decoration: underline;
     }
-    hr {
-      margin: 3rem 0;
-      border: 0;
-      border-top: 1px solid #ccc;
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 0 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>G.R.Sripad</h1>
-    
+    <h1>G.R. Sripad</h1>
+    <p>Full Stack Developer | B.Tech CSE</p>
   </header>
 
   <main>
-    <h3>My Projects</h3>
-    <ol>
-      <li><a href="p1">My portfolio</a></li>
-      <li><a href="p2">Food cart</a></li>
-      <li><a href="p3/index.html">project 3</a></li>
-      <li><a href="p4">Project 4</a></li>
-      <li><a href="https://gcet-react-app-git-main-sripads-projects-8f435956.vercel.app/" target="_blank" rel="noopener noreferrer">Project 5</a></li>
-      <li><a href="https://react-lessons-eta.vercel.app/">react-lessons</a></li>
-      <li><a href="https://github.com/sripadgr/mongo-query" target="_blank">Mongo Query</a></li>
-      <li><a href="https://gcet-node-app-eta.vercel.app/">nodejs api</a></li>
-    </ol>
+    <section>
+      <h3>🚀 My Projects</h3>
+      <ol>
+        <li><a href="p1">My Portfolio</a></li>
+        <li><a href="p2">Food Cart</a></li>
+        <li><a href="p3/index.html">Project 3</a></li>
+        <li><a href="p4">Project 4</a></li>
+        <li><a href="https://gcet-react-app-git-main-sripads-projects-8f435956.vercel.app/" target="_blank" rel="noopener noreferrer">Project 5 (React App)</a></li>
+        <li><a href="https://react-lessons-eta.vercel.app/" target="_blank">React Lessons</a></li>
+        <li><a href="https://github.com/sripadgr/mongo-query" target="_blank">Mongo Query (GitHub)</a></li>
+        <li><a href="https://gcet-node-app-eta.vercel.app/" target="_blank">Node.js API</a></li>
+      </ol>
+    </section>
 
-    <hr>
-
-    <h3>My Assignments</h3>
-    <ol>
-      <li><a href="a1">Assignment 1</a></li>
-      <li><a href="a2">Assignment 2</a></li>
-      <li><a href="a3">Assignment 3</a></li>
-      <li><a href="a4">Assignment 4</a></li>
+    <section>
+      <h3>📚 My Assignments</h3>
+      <ol>
+        <!-- You can loop to generate 1–23 if using a script -->
+        <!-- Example: -->
+        <li><a href="a1">Assignment 1</a></li>
+        <li><a href="a2">Assignment 2</a></li>
+        <li><a href="a3">Assignment 3</a></li>
+        <li><a href="a4">Assignment 4</a></li>
         <li><a href="a5">Assignment 5</a></li>
         <li><a href="a6">Assignment 6</a></li>
         <li><a href="a7">Assignment 7</a></li>
@@ -102,7 +141,12 @@
         <li><a href="a21">Assignment 21</a></li>
         <li><a href="a22">Assignment 22</a></li>
         <li><a href="a23">Assignment 23</a></li>
-    </ol>
+      </ol>
+    </section>
   </main>
+
+  <footer>
+    © 2025 G.R. Sripad. All rights reserved.
+  </footer>
 </body>
 </html>
